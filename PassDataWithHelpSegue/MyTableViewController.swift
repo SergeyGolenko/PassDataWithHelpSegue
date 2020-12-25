@@ -9,7 +9,8 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var item = "Ekaterina"
+    var item = "Info for second view"
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +28,19 @@ class MyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         cell.textLabel?.text = "Row - \(indexPath.row)"
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
+
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "passData"{
-             let secondVC = segue.destination as? SecondViewController
+             let secondVC = segue.destination as! SecondViewController
             
-            secondVC?.newItem = item
+            secondVC.newItem = item
+          
           
             
             

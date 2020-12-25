@@ -49,12 +49,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="u" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cst-2E-Oen">
-                                <rect key="frame" x="107" y="396" width="200" height="50"/>
+                                <rect key="frame" x="107" y="321" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="nU0-EO-JRe"/>
+                                    <constraint firstAttribute="height" constant="200" id="nU0-EO-JRe"/>
                                     <constraint firstAttribute="width" constant="200" id="vc5-q4-4q0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

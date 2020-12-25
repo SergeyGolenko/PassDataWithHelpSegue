@@ -8,16 +8,14 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+   
     
     @IBOutlet weak var labelSecondVC: UILabel!
-    
-    
     var newItem = ""
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         labelSecondVC.text = newItem
+       
     }
     
 
