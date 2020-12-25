@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2C40EDBF2596407C0084D185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EDBE2596407C0084D185 /* AppDelegate.swift */; };
 		2C40EDC12596407C0084D185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EDC02596407C0084D185 /* SceneDelegate.swift */; };
-		2C40EDC32596407C0084D185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EDC22596407C0084D185 /* ViewController.swift */; };
 		2C40EDC62596407C0084D185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EDC42596407C0084D185 /* Main.storyboard */; };
 		2C40EDC82596407F0084D185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EDC72596407F0084D185 /* Assets.xcassets */; };
 		2C40EDCB2596407F0084D185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40EDC92596407F0084D185 /* LaunchScreen.storyboard */; };
+		2C40EDD4259641EF0084D185 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EDD3259641EF0084D185 /* MyTableViewController.swift */; };
+		2C40EDD8259646CD0084D185 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40EDD7259646CD0084D185 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C40EDBB2596407C0084D185 /* PassDataWithHelpSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDataWithHelpSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C40EDBE2596407C0084D185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C40EDC02596407C0084D185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C40EDC22596407C0084D185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C40EDC52596407C0084D185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C40EDC72596407F0084D185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C40EDCA2596407F0084D185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C40EDCC2596407F0084D185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C40EDD3259641EF0084D185 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		2C40EDD7259646CD0084D185 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				2C40EDBE2596407C0084D185 /* AppDelegate.swift */,
 				2C40EDC02596407C0084D185 /* SceneDelegate.swift */,
-				2C40EDC22596407C0084D185 /* ViewController.swift */,
 				2C40EDC42596407C0084D185 /* Main.storyboard */,
+				2C40EDD3259641EF0084D185 /* MyTableViewController.swift */,
+				2C40EDD7259646CD0084D185 /* SecondViewController.swift */,
 				2C40EDC72596407F0084D185 /* Assets.xcassets */,
 				2C40EDC92596407F0084D185 /* LaunchScreen.storyboard */,
 				2C40EDCC2596407F0084D185 /* Info.plist */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40EDC32596407C0084D185 /* ViewController.swift in Sources */,
+				2C40EDD8259646CD0084D185 /* SecondViewController.swift in Sources */,
 				2C40EDBF2596407C0084D185 /* AppDelegate.swift in Sources */,
 				2C40EDC12596407C0084D185 /* SceneDelegate.swift in Sources */,
+				2C40EDD4259641EF0084D185 /* MyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

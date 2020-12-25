@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kna-fn-mZg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Kna-fn-mZg">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kna-fn-mZg" id="PWU-T5-piZ">
@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="passData" id="g0O-lN-kTp"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="passData" id="MO3-nG-yZn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -38,23 +38,42 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7Y-d5-Ckv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="135"/>
+            <point key="canvasLocation" x="222" y="13"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassDataWithHelpSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="PassDataWithHelpSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="u" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cst-2E-Oen">
+                                <rect key="frame" x="107" y="396" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nU0-EO-JRe"/>
+                                    <constraint firstAttribute="width" constant="200" id="vc5-q4-4q0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cst-2E-Oen" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2CN-IH-uJw"/>
+                            <constraint firstItem="cst-2E-Oen" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zvI-0j-CBM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MgB-OT-Qrp"/>
+                    <connections>
+                        <outlet property="labelSecondVC" destination="cst-2E-Oen" id="Wca-TU-AWx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="141"/>
+            <point key="canvasLocation" x="1343" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zee-ue-0zq">
